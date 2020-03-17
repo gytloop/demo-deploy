@@ -19,6 +19,6 @@ function load_template {
 load_template $COM
 load_template ${COM}-svc
 
-kubectl --server $K8S_MASTER_HOST apply -f tmp/$COM.json
-kubectl --server $K8S_MASTER_HOST apply -f tmp/${COM}-svc.json
+kubectl apply -f tmp/$COM.json
+kubectl apply -f tmp/${COM}-svc.json
 rm -rf tmp/*.json
