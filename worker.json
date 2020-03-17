@@ -27,7 +27,7 @@
         "containers": [
           {
             "name": "worker",
-            "image": "192.168.56.51:5000/worker:${TAG}",
+            "image": "www.gytloop.com:5000/worker:${TAG}",
             "ports": [
               {
                 "containerPort": 80
